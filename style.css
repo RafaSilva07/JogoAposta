@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #333, #555);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 20px 0;
+}
+
+.pista {
+    position: relative; /* Necessário para posicionar a linha de chegada */
+    width: 600px;
+    height: 200px;
+    border: 1px solid #333;
+    background-color: #e8e8e8;
+    overflow: hidden;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linha-chegada {
+    position: absolute;
+    top: 0;
+    right: 0; /* Alinha a linha de chegada à direita */
+    width: 10px;
+    height: 100%; /* Faz a linha ocupar toda a altura da pista */
+    background: repeating-linear-gradient(
+        0deg,
+        white,
+        white 10px,
+        black 10px,
+        black 20px
+    ); /* Cria uma linha listrada */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Efeito de sombra */
+}
+
+
+.quadrado {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    left: 0; /* Todos começam na posição inicial */
+}
+
+#quadrado1 { background: #ff5733; top: 5%; }
+#quadrado2 { background: #33c3ff; top: 28%; }
+#quadrado3 { background: #85e21f; top: 50%; }
+#quadrado4 { background: #ff33d4; top: 72%; }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #85e21f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #69c313;
+}
+.aposta {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.aposta label {
+    margin-right: 10px;
+}
+
+.aposta select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+#resultado {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}

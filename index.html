@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida de Quadrados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Corrida de Quadrados</h1>
+        <p>Escolha um quadrado e torça para ele ganhar!</p>
+    </header>
+
+    <main>
+        <div class="pista">
+            <div class="linha-chegada"></div>
+            <div class="quadrado" id="quadrado1">1</div>
+            <div class="quadrado" id="quadrado2">2</div>
+            <div class="quadrado" id="quadrado3">3</div>
+            <div class="quadrado" id="quadrado4">4</div>
+        </div>
+        
+        <div class="aposta">
+            <label for="selecao-quadrado">Escolha seu quadrado:</label>
+            <select id="selecao-quadrado">
+                <option value="1">Quadrado 1</option>
+                <option value="2">Quadrado 2</option>
+                <option value="3">Quadrado 3</option>
+                <option value="4">Quadrado 4</option>
+            </select>
+        </div>
+        <button id="iniciar">Iniciar Corrida</button>
+        <button id="reiniciar">Reiniciar Corrida</button>
+        <p id="resultado"></p>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
